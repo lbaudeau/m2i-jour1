@@ -33,6 +33,15 @@ Cet exemple écrit la valeur `your_email@example.com` pour le nom de configurati
 Il utilise le flag `--global` pour que cette valeur soit définie pour l'utilisateur actuel du système d'exploitation.
 
 
+## git config editor – core.editor
+
+
+## Outils de merge
+
+## Sorties colorées
+
+### Paramètres de configuration de couleur de Git
+
 # Créer un dépôt
 
 ## Initialisation d'un nouveau dépôt : `git init`
