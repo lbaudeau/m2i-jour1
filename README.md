@@ -30,4 +30,6 @@ git commit -m "first commit"
 git remote add origin https://github.com/lbaudeau/m2i-jour1.git
 git push -u origin master
 
+-------------------------------------------------------
 
+git fetch - p   ( recupere l'etat du server en local)
