@@ -1,5 +1,6 @@
 [https://fr.atlassian.com/git/tutorials/setting-up-a-repository](setting up a repository)
 --------------------------------------------------------------------------------------------------------------------------
+<<<<<<< HEAD
 # Configurer git :  `git config`
 
 ```bash
@@ -13,6 +14,49 @@ git config "user name"
 
 
 
+=======
+
+# Configurer git :  `git config`
+
+## Niveaux de configuration et fichiers associés à git config
+
+```bash
+git config user.email "votre_email@exemple.com"
+git config user.name  "votre_nom"
+```
+Permet de configurer aussi bien le local que le distant `--local`, `--global` ou `--system`
+Par défaut, git config écrira à un niveau local si aucune option de configuration n'est transmise. 
+La configuration au niveau local s'applique au contexte dans lequel le dépôt git config est appelé. 
+Les valeurs de configuration locales sont stockées dans un fichier situé dans le répertoire .git du dépôt : .git/config
+
+La configuration au niveau global varie en fonction de l'utilisateur, ce qui signifie qu'elle s'applique à un utilisateur du système d'exploitation. 
+Les valeurs de la configuration globale sont stockées dans un fichier situé dans le répertoire de base d'un utilisateur. `~/.gitconfig` sur les systèmes Unix et `C:\Users\<nom_utilisateur>\.gitconfig` sous Windows
+
+La configuration de niveau système est appliquée à une machine complète. 
+Cela concerne tous les utilisateurs d'un système d'exploitation et tous les dépôts. 
+Le fichier de configuration de niveau système réside dans un fichier gitconfig extrait du chemin d'accès à la racine du système. 
+Il se trouve dans `$(prefix)/etc/gitconfig` sur les systèmes Unix. 
+Concernant les systèmes Windows, ce fichier se trouve dans `C:\Documents and Settings\All Users\Application Data\Git\config` sous Windows XP 
+et dans `C:\ProgramData\Git\config` sous Windows Vista ou des versions plus récentes.
+
+
+```bash
+git config --global user.email "votre_email@exemple.com"
+```
+
+Cet exemple écrit la valeur `your_email@example.com` pour le nom de configuration user.email. 
+Il utilise le flag `--global` pour que cette valeur soit définie pour l'utilisateur actuel du système d'exploitation.
+
+
+## git config editor – core.editor
+
+
+## Outils de merge
+
+## Sorties colorées
+
+### Paramètres de configuration de couleur de Git
+>>>>>>> ludo/b02
 
 # Créer un dépôt
 
@@ -65,6 +109,7 @@ git commit -m "Hello-world.txt ajouté au dépôt"
 
 
 
+<<<<<<< HEAD
 # Créer des branches
 
 git branch : liste des branches
@@ -73,3 +118,10 @@ git branch b01  : creaton branche 01
 
 git checkout -b b03 : creation de la branche b03, se positionne dessus 
 
+=======
+# Creation de branche
+
+
+
+# Merge Rebase
+>>>>>>> ludo/b02
