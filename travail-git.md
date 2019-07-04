@@ -1,20 +1,5 @@
 [setting up a repository](https://fr.atlassian.com/git/tutorials/setting-up-a-repository)
 --------------------------------------------------------------------------------------------------------------------------
-<<<<<<< HEAD
-# Configurer git :  `git config`
-
-```bash
-git config user.email
-git config "user name"
-
-```
-
-
-
-
-
-
-=======
 
 # Configurer git :  `git config`
 
