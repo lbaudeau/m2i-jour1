@@ -24,11 +24,12 @@ git remote add origin https://github.com/lbaudeau/m2i-jour1.git
 
 -------------------------------------------------------
 echo "# m2i-jour1" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/lbaudeau/m2i-jour1.git
-git push -u origin master
+
+ - git init
+ - git add README.md
+ - git commit -m "first commit"
+ - git remote add origin https://github.com/lbaudeau/m2i-jour1.git
+ - git push -u origin master
 
 -------------------------------------------------------
 
