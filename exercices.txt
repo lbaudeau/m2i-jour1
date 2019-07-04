@@ -1,0 +1,42 @@
+Créer un depot local
+
+    initialiser git local avec les informations de l'utilisateur
+
+    Créer un depot local : git init
+    Créer un fichier 
+    ajouter ce fichier a l'index : git add README.md
+    effectuer un premier commit avec son message : git commit -m "first commit"
+    
+
+Créer un depot sur git hub
+
+    Créer un depot sur git Hub
+    recupere son url:  https://github.com/lbaudeau/m2i-jour1.git
+
+    Ajouter ds le depot local la reference au depott distant
+        git remote add origin https://github.com/lbaudeau/m2i-jour1.git
+        git push -u origin master
+
+
+Tester  l'ammendement de commit 
+
+    Modifier un fichier et créer un commit   C1
+    Ajouter un nv fichier et l'ajouter au commit precedent
+
+
+Créer 2 nv commits et les annuler
+
+    créer C2 & C3 , puis revenir a C1
+    Envoyer le resultat C1' sur le serveur
+
+
+Annuler des actions sur le depot distant
+
+    Revenir en arriere de n commit : git reset --hard  HEAD~n
+        git push -f : force le retour en arriere sur le serveur (DANGEREUR car ecrase l'historique)
+
+    Bonne pratique : faire un commit inverser : git revert hash  ou 
+    Annuler l'interval entre commit n-3 et le HEAD : git revert HEAD~3..HEAD
+
+
+
