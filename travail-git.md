@@ -1,4 +1,4 @@
-[https://fr.atlassian.com/git/tutorials/setting-up-a-repository](setting up a repository)
+[setting up a repository](https://fr.atlassian.com/git/tutorials/setting-up-a-repository)
 --------------------------------------------------------------------------------------------------------------------------
 
 # Configurer git :  `git config`
