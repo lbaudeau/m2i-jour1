@@ -1,0 +1,95 @@
+-------------------------------------------------------
+Documentations :
+
+https://git-scm.com/book/fr/v2/
+https://github.com/progit/progit2-fr/releases/download/2.1.39/progit_v2.1.39.pdf
+
+http://reinh.com/blog/2009/03/02/a-git-workflow-for-agile-teams.html
+
+https://fr.atlassian.com/git/tutorials
+https://stackabuse.com/git-difference-between-git-fetch-and-git-pull/
+
+-------------------------------------------------------
+Commands V.I. :
+
+i	: passage en mode insertion
+ESC	: passage en mode commande
+
+mode insertion:
+permet d'ecrire le libellé du commit
+
+
+mode commande : 
+:wq 	-> write & quit
+
+-------------------------------------------------------
+GITHUB
+
+creation d'un compte github
+creation du depot sous git m2i-jour1
+
+cmd> declaration du depot distant : 
+git remote add origin https://github.com/lbaudeau/m2i-jour1.git
+
+-------------------------------------------------------
+Creation d'un fichier ds le depot local et commit + push
+
+echo "# m2i-jour1" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/lbaudeau/m2i-jour1.git
+git push -u origin master
+-------------------------------------------------------
+fetch récupère tous les commits, les références (comme les balises), 
+les branches et les fichiers d'un référentiel distant, ainsi que tous les autres objets correspondants. 
+Cependant, toutes les balises ne sont pas récupérées car cette commande ne prend que celles qui pointent 
+vers les commits que vous récupérez. 
+En gros, cette commande permet d'extraire tout ce qui est nécessaire pour reconstruire l'historique 
+de la branche qui vous intéresse.
+
+git fetch
+git fetch -p
+
+-------------------------------------------------------
+
+git status 	: donne le status actuel ds git ( cmd en cours, modif en cour)
+git log		: affiche le log du repo loacl
+git log	-p	: affiche le log detaillé du repo local
+git show	: affiche l'etat du dernier commit
+
+-------------------------------------------------------
+Etiqueter des versions
+
+git tag				: affiche les etiquettes existantes
+git tag v1 -m "Version 01"	: création de l'etiquette v1 avec le message "Version 01"
+
+git show v1			: affiche le detail de l'etiquette
+
+git push origin v1 		: permet d'envoyer l'etiquette sur le serveur
+git push origin --tags 		: permet d'envoyer tous les tags
+
+-------------------------------------------------------
+Gestion des conflits
+
+git merge
+-------------------------------------------------------
+Réécrire l’historique : https://git-scm.com/book/fr/v2/Utilitaires-Git-R%C3%A9%C3%A9crire-l%E2%80%99historique
+
+git commit --amend				: modification du dernier commit et modification du message
+git commit --amend --no-edit	: modification du dernier commit  sans modification du message
+
+git reset HEAD~n				: annuler les n dernier commit
+git reset HEAD 					: permet de desindexer tous l'index
+git reset HEAD ./myfile.txt			: permet e desindexé le fichier specifier
+
+git checkout
+-------------------------------------------------------
+remisage de votre travail ( )
+
+git stash 			: mettre son travail de coté
+git stash list			: affiche la liste des remisage
+git stash drop stash@{0}	: supprimer le remisage 0
+git stash apply 		: applique le dernier  remisage
+git stash apply stash@{1}	: applique le remisage 1
+git stash apply --index		: applique le dernier  remisage et index les fichiers
