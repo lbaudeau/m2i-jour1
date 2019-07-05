@@ -93,16 +93,46 @@ git commit -m "Hello-world.txt ajouté au dépôt"
 
 
 
-# Créer des branches
+# les branches
 
 git branch : liste des branches
-
 git branch b01  : creaton branche 01
-
 git checkout -b b03 : creation de la branche b03, se positionne dessus 
-
-# Creation de branche
 
 
 
 # Merge Rebase
+
+
+
+# Créer et appliquer des patchs
+
+## methode 1
+
+Générer un patch via git diff
+
+```bash
+git diff > hotfix.patch
+```
+
+Appliquer un patch
+
+```bash
+git apply hotfix.patch
+```
+
+## methode 2 (conseillée)
+
+créer une branche hotfix
+realsier les modifications vouluees
+générer un patch via 
+
+```bash
+git format-patch master
+```
+
+Appliquer un patch
+
+```bash
+git am  *.patch
+```
