@@ -1,20 +1,5 @@
 [https://fr.atlassian.com/git/tutorials/setting-up-a-repository](setting up a repository)
 --------------------------------------------------------------------------------------------------------------------------
-<<<<<<< HEAD
-# Configurer git :  `git config`
-
-```bash
-git config user.email
-git config "user name"
-
-```
-
-
-
-
-
-
-=======
 
 # Configurer git :  `git config`
 
@@ -56,7 +41,6 @@ Il utilise le flag `--global` pour que cette valeur soit définie pour l'utilisa
 ## Sorties colorées
 
 ### Paramètres de configuration de couleur de Git
->>>>>>> ludo/b02
 
 # Créer un dépôt
 
@@ -109,7 +93,6 @@ git commit -m "Hello-world.txt ajouté au dépôt"
 
 
 
-<<<<<<< HEAD
 # Créer des branches
 
 git branch : liste des branches
@@ -118,10 +101,8 @@ git branch b01  : creaton branche 01
 
 git checkout -b b03 : creation de la branche b03, se positionne dessus 
 
-=======
 # Creation de branche
 
 
 
 # Merge Rebase
->>>>>>> ludo/b02
